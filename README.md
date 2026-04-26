@@ -2,7 +2,7 @@
 
 > **From hypothesis to executable experiments.**
 
-🔗 **Live Demo:** [your-vercel-url.vercel.app](https://proto-flow-rust.vercel.app/)  
+🔗 **Live Demo:** [ProtoFlow](https://proto-flow-rust.vercel.app/)  
 
 ---
 
