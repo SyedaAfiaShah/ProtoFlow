@@ -4,8 +4,8 @@ import { callGroq } from '@/lib/groq'
 import { stripMarkdown } from '@/lib/utils'
 import { ParsedHypothesis, ProtocolStep, FeedbackItem } from '@/lib/types'
 
-const tavilyClient = tavily({ 
-  apiKey: process.env.TAVILY_API_KEY ?? '' 
+const tavilyClient = tavily({
+  apiKey: process.env.TAVILY_API_KEY ?? ''
 })
 
 async function fetchProtocols(
@@ -96,14 +96,13 @@ export async function POST(req: NextRequest) {
     const hypothesis: string = body.hypothesis ?? ''
     const parsed: ParsedHypothesis = body.parsed
 
-    // Fetch real protocols in parallel with nothing else yet
     const protocolContext = await fetchProtocols(parsed)
 
-    const systemPrompt = `You are a senior experimental scientist 
+    const systemPrompt = `You are a senior experimental scientist
 specialising in ${parsed.domain}.
 
-Your job is to generate a detailed, step-by-step experiment 
-protocol that adapts real published methodologies to a 
+Your job is to generate a detailed, step-by-step experiment
+protocol that adapts real published methodologies to a
 specific hypothesis.
 
 CRITICAL RULES:
@@ -112,9 +111,9 @@ CRITICAL RULES:
 - Start with [ and end with ]
 - Do not invent steps unsupported by published practice
 - Be specific: use real reagent names, volumes, temperatures
-- If a step is adapted from a retrieved source, note it in 
+- If a step is adapted from a retrieved source, note it in
   source_protocol field
-- If no source found for a step, use domain best practice 
+- If no source found for a step, use domain best practice
   and omit source_protocol
 - Include ALL experimental parameters found in the papers (temperatures, concentrations, incubation times).
 - Include appropriate experimental controls based on the papers.
@@ -152,16 +151,16 @@ Requirements:
 - critical_note only when genuinely important
 - Steps must follow logical experimental order:
   preparation -> execution -> measurement -> analysis
-- Be operationally specific — a lab tech should be able to 
+- Be operationally specific — a lab tech should be able to
   follow this on Monday morning`
 
     const feedbackContext = await getRelevantFeedback(parsed.domain, parsed.assay_method)
     const finalSystemPrompt = systemPrompt + feedbackContext
 
     const raw = await callGroq(
-      finalSystemPrompt, 
-      userPrompt, 
-      0.2,  // slight creativity for protocol adaptation
+      finalSystemPrompt,
+      userPrompt,
+      0.2,
       3000
     )
     const cleaned = stripMarkdown(raw)

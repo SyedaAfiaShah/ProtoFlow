@@ -123,6 +123,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: #F7F4EF;
   }
   html {
     @apply font-sans;
@@ -131,5 +132,5 @@
 }
 
 ::-webkit-scrollbar { width: 6px }
-::-webkit-scrollbar-track { background: #0a0f1e }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px }
+::-webkit-scrollbar-track { background: #EEE9E0 }
+::-webkit-scrollbar-thumb { background: #C4BDB4; border-radius: 3px }
