@@ -34,7 +34,7 @@ export default function TimelineTab({ phases }: Props) {
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#7C9A7E] flex items-center justify-center text-white text-xs font-bold shadow-sm">
                 {phase.phase_number}
               </div>
-              <h4 className="text-[#2C2C2C] font-medium text-base">{phase.phase_name}</h4>
+              <h4 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] font-medium text-base">{phase.phase_name}</h4>
             </div>
             <Badge variant="secondary" className="bg-[#EEE9E0] text-[#5C5C5C] border border-[#DDD8CF] flex items-center shrink-0 ml-4 py-1">
               <Clock className="w-3 h-3 mr-1.5" />

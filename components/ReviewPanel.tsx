@@ -140,7 +140,7 @@ export default function ReviewPanel({
                   className="bg-[#EBF0EB] border border-[#7C9A7E] rounded-xl p-6 text-center"
                 >
                   <CheckCircle2 className="text-[#4A6B4C] mx-auto mb-3" size={32} />
-                  <h3 className="text-[#4A6B4C] text-lg font-semibold mb-2">Feedback Submitted!</h3>
+                  <h3 className="font-[family-name:var(--font-serif)] text-[#4A6B4C] text-lg font-semibold mb-2">Feedback Submitted!</h3>
                   <p className="text-[#5C5C5C] text-sm">
                     Your corrections have been saved. The next experiment plan for similar {parsed.domain} experiments will incorporate your feedback automatically.
                   </p>

@@ -14,7 +14,7 @@ export default function ValidationTab({ validation }: Props) {
         <div className="bg-[#EBF0EB] border border-[#7C9A7E] rounded-xl p-4">
           <div className="flex items-center gap-2 mb-3">
             <CheckCircle2 className="text-[#4A6B4C]" size={18} />
-            <h3 className="text-[#4A6B4C] font-medium">Success Criteria</h3>
+            <h3 className="font-[family-name:var(--font-serif)] text-[#4A6B4C] font-medium">Success Criteria</h3>
           </div>
           <ul className="space-y-2">
             {validation.success_criteria.map((criterion, idx) => (
@@ -30,7 +30,7 @@ export default function ValidationTab({ validation }: Props) {
         <div className="bg-[#FBF0F0] border border-[#D4A0A0] rounded-xl p-4">
           <div className="flex items-center gap-2 mb-3">
             <XCircle className="text-[#8B4545]" size={18} />
-            <h3 className="text-[#8B4545] font-medium">Failure Criteria</h3>
+            <h3 className="font-[family-name:var(--font-serif)] text-[#8B4545] font-medium">Failure Criteria</h3>
           </div>
           <ul className="space-y-2">
             {validation.failure_criteria.map((criterion, idx) => (
@@ -70,7 +70,7 @@ export default function ValidationTab({ validation }: Props) {
 
       {/* CONTROLS TABLE */}
       <div>
-        <h3 className="text-[#2C2C2C] font-medium mb-3">Experimental Controls</h3>
+        <h3 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] font-medium mb-3">Experimental Controls</h3>
         <div className="overflow-x-auto rounded-xl border border-[#DDD8CF] shadow-sm">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -117,7 +117,7 @@ export default function ValidationTab({ validation }: Props) {
 
       {/* QC CHECKPOINTS */}
       <div>
-        <h3 className="text-[#2C2C2C] font-medium mb-3">QC Checkpoints</h3>
+        <h3 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] font-medium mb-3">QC Checkpoints</h3>
         <ul className="space-y-3">
           {validation.qc_checkpoints.map((checkpoint, idx) => (
             <li key={idx} className="flex items-start gap-3">

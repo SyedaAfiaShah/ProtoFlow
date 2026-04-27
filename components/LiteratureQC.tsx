@@ -36,7 +36,7 @@ export default function LiteratureQC({ result }: Props) {
         <CardHeader className="flex flex-row items-center justify-between pb-2">
           <div className="flex items-center space-x-2 text-[#2C2C2C]">
             <BookOpen className="w-5 h-5" />
-            <CardTitle className="text-lg">Literature QC</CardTitle>
+            <CardTitle className="font-[family-name:var(--font-serif)] text-lg">Literature QC</CardTitle>
           </div>
           <Badge variant="outline" className={badgeClass}>
             {badge}

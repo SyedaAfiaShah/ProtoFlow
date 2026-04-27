@@ -41,7 +41,7 @@ export default function LitmusSubmit({ plan, disabled }: Props) {
     <div className="mt-8 p-6 bg-[#EBF0EB] border border-[#7C9A7E] rounded-2xl">
       <div className="flex items-center mb-2">
         <Send className="text-[#4A6B4C] mr-2" size={20} />
-        <h2 className="text-[#2C2C2C] text-lg font-semibold">Submit to CRO Network</h2>
+        <h2 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] text-lg font-semibold">Submit to CRO Network</h2>
         <span className="text-[#4A6B4C] text-sm ml-1 font-medium">via Litmus</span>
       </div>
 

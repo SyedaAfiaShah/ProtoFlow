@@ -22,7 +22,7 @@ export default function ProtocolTab({ steps }: Props) {
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#7C9A7E] flex items-center justify-center text-white text-xs font-bold shadow-sm">
                 {String(step.step_number).padStart(2, '0')}
               </div>
-              <h4 className="text-[#2C2C2C] font-medium text-base">{step.title}</h4>
+              <h4 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] font-medium text-base">{step.title}</h4>
             </div>
             {step.duration && (
               <Badge variant="secondary" className="bg-[#EEE9E0] hover:bg-[#DDD8CF] text-[#5C5C5C] flex items-center shrink-0 ml-4 py-1 border border-[#DDD8CF]">

@@ -59,7 +59,7 @@ export default function BudgetTab({ budget, parsed, materials, onAlternativesFou
 
       {/* Breakdown Table */}
       <div>
-        <h3 className="text-[#2C2C2C] font-medium mt-6 mb-3">Cost Breakdown</h3>
+        <h3 className="font-[family-name:var(--font-serif)] text-[#2C2C2C] font-medium mt-6 mb-3">Cost Breakdown</h3>
         <div className="overflow-x-auto rounded-xl border border-[#DDD8CF] shadow-sm">
           <table className="w-full text-left border-collapse">
             <thead>

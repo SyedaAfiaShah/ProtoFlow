@@ -248,7 +248,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FlaskConical className="text-[#7C9A7E] w-5 h-5" />
-              <span className="font-bold text-lg text-[#2C2C2C]">ProtoFlow</span>
+              <span className="font-[family-name:var(--font-serif)] italic font-bold text-xl text-[#2C2C2C]">ProtoFlow</span>
             </div>
             <div className="flex items-center gap-3">
               <Badge variant="outline" className="border-[#7C9A7E] text-[#4A6B4C] bg-[#EBF0EB] py-1">
@@ -275,7 +275,12 @@ export default function Home() {
 
       {/* ── Landing / single-column view ── */}
       {!hasDashboard && (
-        <div className="px-4 py-16">
+        <div
+          className="px-4 py-16"
+          style={{
+            background: 'radial-gradient(ellipse at 70% 20%, rgba(124,154,126,0.08) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(196,168,130,0.06) 0%, transparent 50%)'
+          }}
+        >
           <div className="max-w-2xl mx-auto space-y-12">
             {/* Hero */}
             <motion.div
@@ -283,12 +288,15 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-center space-y-4"
             >
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#7C9A7E] to-[#4A6B4C]">
-                ProtoFlow
+              <h1 className="font-[family-name:var(--font-serif)] text-4xl font-bold text-[#2C2C2C] leading-tight mt-6">
+                Turn your hypothesis into a
+                <span className="block text-[#7C9A7E] italic">
+                  complete experiment plan
+                </span>
               </h1>
 
-              <p className="text-[#5C5C5C] max-w-xl mx-auto text-lg leading-relaxed">
-                From hypothesis to executable experiments
+              <p className="font-[family-name:var(--font-sans)] text-[#5C5C5C] text-lg mt-4 max-w-md mx-auto">
+                RAG-powered planning grounded in real published protocols, live supplier data, and peer-reviewed literature.
               </p>
             </motion.div>
 
@@ -436,7 +444,7 @@ export default function Home() {
                     <CardHeader className="pb-3 border-b border-[#E8E3DA] flex flex-row justify-between items-center bg-[#FAFAF8]">
                       <div className="flex items-center space-x-2">
                         <CheckCircle2 className="w-4 h-4 text-[#4A6B4C]" />
-                        <CardTitle className="text-[#2C2C2C] text-sm">Parsed Successfully</CardTitle>
+                        <CardTitle className="text-[#2C2C2C] text-sm font-[family-name:var(--font-serif)] italic">Parsed Successfully</CardTitle>
                       </div>
                       <Badge variant="outline" className="bg-[#EBF0EB] text-[#4A6B4C] border-[#7C9A7E] capitalize text-[10px]">
                         {parsed.domain.replace('_', ' ')}
