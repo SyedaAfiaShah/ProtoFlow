@@ -288,15 +288,12 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-center space-y-4"
             >
-              <h1 className="font-[family-name:var(--font-serif)] text-4xl font-bold text-[#2C2C2C] leading-tight mt-6">
-                Turn your hypothesis into a
-                <span className="block text-[#7C9A7E] italic">
-                  complete experiment plan
-                </span>
+              <h1 className="font-[family-name:var(--font-serif)] text-5xl font-bold text-[#2C2C2C] leading-tight mt-6">
+                ProtoFlow
               </h1>
 
-              <p className="font-[family-name:var(--font-sans)] text-[#5C5C5C] text-lg mt-4 max-w-md mx-auto">
-                RAG-powered planning grounded in real published protocols, live supplier data, and peer-reviewed literature.
+              <p className="font-[family-name:var(--font-sans)] text-[#5C5C5C] text-lg mt-3 max-w-md">
+                From hypothesis to executable experiments
               </p>
             </motion.div>
 
