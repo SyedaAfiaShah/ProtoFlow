@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FlaskConical, Loader2, ArrowRight, Sparkles, CheckCircle2, Download } from 'lucide-react'
+import { FlaskConical, Loader2, ArrowRight, CheckCircle2, Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
@@ -251,10 +251,6 @@ export default function Home() {
               <span className="font-[family-name:var(--font-serif)] italic font-bold text-xl text-[#2C2C2C]">ProtoFlow</span>
             </div>
             <div className="flex items-center gap-3">
-              <Badge variant="outline" className="border-[#7C9A7E] text-[#4A6B4C] bg-[#EBF0EB] py-1">
-                <Sparkles className="w-3 h-3 mr-2" />
-                Hack-Nation 2026
-              </Badge>
               {budgetStatus === 'done' && (
                 <button
                   onClick={handleExportPDF}
@@ -292,7 +288,7 @@ export default function Home() {
                 ProtoFlow
               </h1>
 
-              <p className="font-[family-name:var(--font-sans)] text-[#5C5C5C] text-lg mt-3 max-w-md">
+              <p className="font-[family-name:var(--font-sans)] text-[#5C5C5C] text-lg mt-3 max-w-md mx-auto">
                 From hypothesis to executable experiments
               </p>
             </motion.div>
