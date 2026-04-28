@@ -248,7 +248,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FlaskConical className="text-[#7C9A7E] w-5 h-5" />
-              <span className="font-[family-name:var(--font-serif)] italic font-bold text-xl text-[#2C2C2C]">ProtoFlow</span>
+              <span className="font-[family-name:var(--font-serif)] font-bold text-xl text-[#2C2C2C]">ProtoFlow</span>
             </div>
             <div className="flex items-center gap-3">
               {budgetStatus === 'done' && (
@@ -437,7 +437,7 @@ export default function Home() {
                     <CardHeader className="pb-3 border-b border-[#E8E3DA] flex flex-row justify-between items-center bg-[#FAFAF8]">
                       <div className="flex items-center space-x-2">
                         <CheckCircle2 className="w-4 h-4 text-[#4A6B4C]" />
-                        <CardTitle className="text-[#2C2C2C] text-sm font-[family-name:var(--font-serif)] italic">Parsed Successfully</CardTitle>
+                        <CardTitle className="text-[#2C2C2C] text-sm font-[family-name:var(--font-serif)]">Parsed Successfully</CardTitle>
                       </div>
                       <Badge variant="outline" className="bg-[#EBF0EB] text-[#4A6B4C] border-[#7C9A7E] capitalize text-[10px]">
                         {parsed.domain.replace('_', ' ')}
@@ -539,14 +539,14 @@ export default function Home() {
                 <TabsList className="bg-[#EEE9E0] border border-[#DDD8CF] mb-4 p-1 rounded-xl w-full">
                   <TabsTrigger
                     value="protocol"
-                    className="rounded-lg data-[state=active]:bg-[#7C9A7E] data-[state=active]:text-white text-[#5C5C5C] transition-all"
+                    className="rounded-lg data-active:bg-[#7C9A7E] data-active:text-white text-[#5C5C5C] transition-all"
                   >
                     Protocol
                   </TabsTrigger>
                   <TabsTrigger
                     value="materials"
                     disabled={materialsStatus === 'idle'}
-                    className="rounded-lg data-[state=active]:bg-[#7C9A7E] data-[state=active]:text-white text-[#5C5C5C] transition-all"
+                    className="rounded-lg data-active:bg-[#7C9A7E] data-active:text-white text-[#5C5C5C] transition-all"
                   >
                     Materials
                     {materialsStatus === 'loading' && <Loader2 className="ml-1.5 h-3 w-3 animate-spin" />}
@@ -554,7 +554,7 @@ export default function Home() {
                   <TabsTrigger
                     value="budget"
                     disabled={budgetStatus === 'idle'}
-                    className="rounded-lg data-[state=active]:bg-[#7C9A7E] data-[state=active]:text-white text-[#5C5C5C] transition-all"
+                    className="rounded-lg data-active:bg-[#7C9A7E] data-active:text-white text-[#5C5C5C] transition-all"
                   >
                     Budget
                     {budgetStatus === 'loading' && <Loader2 className="ml-1.5 h-3 w-3 animate-spin" />}
@@ -562,7 +562,7 @@ export default function Home() {
                   <TabsTrigger
                     value="timeline"
                     disabled={timelineStatus === 'idle'}
-                    className="rounded-lg data-[state=active]:bg-[#7C9A7E] data-[state=active]:text-white text-[#5C5C5C] transition-all"
+                    className="rounded-lg data-active:bg-[#7C9A7E] data-active:text-white text-[#5C5C5C] transition-all"
                   >
                     Timeline
                     {timelineStatus === 'loading' && <Loader2 className="ml-1.5 h-3 w-3 animate-spin" />}
@@ -570,7 +570,7 @@ export default function Home() {
                   <TabsTrigger
                     value="validation"
                     disabled={validationStatus === 'idle'}
-                    className="rounded-lg data-[state=active]:bg-[#7C9A7E] data-[state=active]:text-white text-[#5C5C5C] transition-all"
+                    className="rounded-lg data-active:bg-[#7C9A7E] data-active:text-white text-[#5C5C5C] transition-all"
                   >
                     Validation
                     {validationStatus === 'loading' && <Loader2 className="ml-1.5 h-3 w-3 animate-spin" />}
