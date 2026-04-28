@@ -284,7 +284,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-center space-y-4"
             >
-              <h1 className="font-[family-name:var(--font-serif)] text-5xl font-bold text-[#2C2C2C] leading-tight mt-6">
+              <h1 className="font-[family-name:var(--font-serif)] text-5xl font-bold text-[#7C9A7E] leading-tight mt-6">
                 ProtoFlow
               </h1>
 
