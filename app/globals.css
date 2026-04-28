@@ -137,3 +137,10 @@
 ::-webkit-scrollbar { width: 6px }
 ::-webkit-scrollbar-track { background: #EEE9E0 }
 ::-webkit-scrollbar-thumb { background: #C4BDB4; border-radius: 3px }
+
+[data-slot="tabs-trigger"][data-active] {
+  background-color: #7C9A7E;
+  color: #ffffff;
+  font-weight: 500;
+  box-shadow: none;
+}
